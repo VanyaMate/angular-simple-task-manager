@@ -29,7 +29,6 @@ export class CreateTaskFormComponent {
     }
 
     protected onSubmit () {
-        console.log('this.', this._titleValue, this._descriptionValue);
         if (this._titleValue.trim() !== '') {
             this._tasksService.addTask({
                 title: this._titleValue, description: this._descriptionValue,
