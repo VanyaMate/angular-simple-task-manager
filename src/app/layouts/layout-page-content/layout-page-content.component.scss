@@ -1,0 +1,24 @@
+.container {
+    display         : flex;
+    flex-direction  : column;
+    gap             : var(--offset-small);
+    max-width       : 800px;
+    margin          : auto;
+    height          : 100dvh;
+    max-height      : 100dvh;
+    padding         : var(--offset-medium);
+    justify-content : space-between;
+
+    .content {
+        width : 100%;
+    }
+
+    .footer {
+        display       : flex;
+        align-items   : center;
+        border-radius : var(--offset-medium);
+        padding       : var(--offset-medium);
+        background    : var(--background-item);
+        height        : var(--height-medium);
+    }
+}

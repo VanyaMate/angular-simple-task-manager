@@ -1,0 +1,17 @@
+<div *ngIf="task" class="container">
+    <ng-container *ngIf="this.prefix">
+        <div class="block">
+            <ng-container *ngTemplateOutlet="this.prefix"/>
+        </div>
+    </ng-container>
+    <div class="block content">
+        <h3>{{ task.title }}</h3>
+        <app-p type="second">{{ task.description }}</app-p>
+        <app-p type="invisible">{{ task.date }}</app-p>
+    </div>
+    <ng-container *ngIf="this.postfix">
+        <div class="block">
+            <ng-container *ngTemplateOutlet="this.postfix"/>
+        </div>
+    </ng-container>
+</div>

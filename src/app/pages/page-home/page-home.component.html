@@ -1,0 +1,13 @@
+<app-create-task-form/>
+<h1 *ngIf="this._tasksService.pending">Loading..</h1>
+<app-task-row-item
+        *ngFor="let task of this._tasksService.tasks"
+        [task]="task"
+>
+    <ng-template #prefix>
+        <app-checkbox [initialState]="task.status" [onToggle]="toggleFor(task.id)"/>
+    </ng-template>
+    <ng-template #postfix>
+        <button (click)="remove($event)" [attr.data-task-id]="task.id">[X]</button>
+    </ng-template>
+</app-task-row-item>

@@ -1,0 +1,13 @@
+.container {
+    display : flex;
+    gap     : var(--offset-small);
+
+    .block {
+        padding     : var(--offset-medium);
+        align-items : center;
+    }
+
+    .content {
+        width : 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.container {
+    font-size : 14px;
+    color     : var(--text-color-main);
+
+    &.second {
+        color : var(--text-color-second);
+    }
+
+    &.invisible {
+        color : var(--text-color-invisible);
+    }
+}

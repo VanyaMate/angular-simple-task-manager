@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/palette";
+@import "styles/sizes";
+@import "styles/animation";
+@import "styles/offset";
+
+* {
+    margin      : 0;
+    padding     : 0;
+    box-sizing  : border-box;
+    font-family : "Lunasima", serif;
+    line-height : 1.2em;
+}
